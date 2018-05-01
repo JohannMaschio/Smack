@@ -39,7 +39,7 @@
         android:layout_height="35dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:onClick="sendMessagebtnClicked"
+        android:onClick="sendMessageBtnClicked"
         android:tint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
