@@ -1,6 +1,7 @@
 package com.rocopat.smack.Services
 
 import android.graphics.Color
+import com.rocopat.smack.Controller.App
 import java.util.*
 
 object UserDataService {
@@ -17,9 +18,11 @@ object UserDataService {
         email = ""
         avatarName = ""
         name = ""
-        AuthService.authToken = ""
-        AuthService.userEmail = ""
-        AuthService.isLoggedIn = false
+        App.prefs.authToken = ""
+        App.prefs.userEmail = ""
+        App.prefs.isLoggedIn = false
+        MessageService.clearMessages()
+        MessageService.clearChannels()
     }
 
     fun returnAvatarColor(componets: String) : Int {
